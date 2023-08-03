@@ -4,10 +4,10 @@ import java.time.format.DateTimeFormatter;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class TodoApplication {
+public class TaskManagement {
     private ArrayList<Tasks> displayList;
     private Scanner scanner;
-    public TodoApplication() {
+    public TaskManagement() {
         displayList = new ArrayList<>();
         scanner = new Scanner(System.in);
     }
@@ -92,7 +92,7 @@ public class TodoApplication {
     }
 
     public static void main(String[] args) {
-        TodoApplication toDoList = new TodoApplication();
+        TaskManagement toDoList = new TaskManagement();
         toDoList.run();
     }
 
